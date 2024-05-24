@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCQ Quiz</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>MCQ Quiz</h1>
+        <label for="unitSelect">Select Unit:</label>
+        <select id="unitSelect" onchange="loadQuiz()">
+            <option value="unit1">Unit I</option>
+            <option value="unit2">Unit II</option>
+            <option value="unit3">Unit III</option>
+            <option value="unit4">Unit IV</option>
+            <option value="unit5">Unit V</option>
+            <!-- Add more options for other units -->
+        </select>
+        <hr>
+        <div id="quiz"></div>
+        
+        <button type="button" onclick="submitQuiz()">Submit</button>
+        
+        <div id="results" class="results-container">
+            <!-- Results will be displayed here -->
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
